@@ -1,0 +1,31 @@
+C7125 Mustafa
+Assigment007-2
+
+age = input("Are you a cigarette addict older than 75 years old?: ")
+while ((age == 'y') or (age == 'n')) == False:
+    age = input("Are you cigarette addict older than 75?\
+    \nPlease press y for Yes and n for No: ")
+
+chronic = input("Do you have a severe chronic disease?: ")
+while ((chronic == 'y') or (chronic == 'n')) == False:
+    chronic = input("Do you have a severe chronic disease?\
+    \nPlease press y for Yes and n for No: ")
+
+immune = input("Is your immune system too weak?: ")
+while ((immune == 'y') or (immune == 'n')) == False:
+    immune = input("Is your immune system too weak?\
+    \nPlease press y for Yes and n for No: ")
+
+if age and chronic and immune == "y" :
+    print("You are in risky group")
+else :
+    print("You are not in risky group")
+
+>>>>>
+>Are you cigarette addict older than 75?    
+>Please press y for Yes and n for No: t
+>Are you cigarette addict older than 75?    
+>Please press y for Yes and n for No: y
+>Do you have a severe chronic disease?: y
+>Is your immune system too weak?: y
+>You are in risky group
