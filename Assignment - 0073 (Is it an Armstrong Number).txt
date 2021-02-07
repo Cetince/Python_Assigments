@@ -1,0 +1,27 @@
+#Assignment - 0073 (Is it an Armstrong Number)
+C7125 Mustafa
+----------------------------------------------
+
+number = input("Please input a positive integer number: ")
+while number.isdigit() == False:
+    number = input("It is an invalid entry. Don't use non-numeric, float, or negative values! :  ")
+ 
+i = 0
+total = 0
+while i < len(str(number)):
+    total += (int(str(number)[i]))**(len(str(number)))
+    i = i+1
+
+if total == int(number):
+    print(f"{number} is an Armstrong number")
+else:
+    print(f"{number} is not an Armstrong number")
+
+
+
+Outputs >>>>>>
+Please input a positive integer number: -18
+It is an invalid entry. Don't use non-numeric, float, or negative values! :  op965o
+It is an invalid entry. Don't use non-numeric, float, or negative values! :  3.145
+It is an invalid entry. Don't use non-numeric, float, or negative values! :  407
+407 is an Armstrong number

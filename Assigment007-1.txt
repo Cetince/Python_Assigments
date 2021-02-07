@@ -1,0 +1,16 @@
+C7125 Mustafa Assigment007-1 Solution
+---------------------------------------------
+
+name = str(input("Please enter your name: "))
+admin_name = str('Mustafa')
+admin_pass = "Q@1_2klmN"
+
+if name == admin_name:
+      print(f"Hello, {name}! The password is {admin_pass}.")
+else :
+      print(f"Hello, {name}! See you later") 
+
+      >>>>Please enter your name: Mustafa
+      >>>>Hello, Mustafa! The password is Q@1_2klmN
+
+      

@@ -1,0 +1,26 @@
+word = input("Please input a word : ")
+while not word.isalpha():
+    word = input("Please input a word without numbers and markers: ")
+if word.isalpha():
+    word = set(word.lower())
+
+left = ['q','w','e','r','t','a','s','d','f','g','z','x','c','v','b']
+right = ['y','u','ı','o','p','ğ','ü','h','j','k','l','ş','i','n','m','ö','ç']
+
+if all(elem in left for elem in word) :
+    print("False {}".format("(uses only left-hand fingers)"))
+   
+elif all(elem in right for elem in word) :
+    print("False {}".format("(uses only right-hand fingers)")) 
+
+else :
+    print("True {}".format("(uses both hand fingers)")) 
+
+Outputs >>>>>>>
+>>Please input a word : ClDaUOMÖ
+True (uses both hand fingers)
+>>Please input a word : 123ASd
+Please input a word without numbers and markers: Clarusway
+True (uses both hand fingers)
+>>Please input a word : asdfew
+False (uses only left-hand fingers)

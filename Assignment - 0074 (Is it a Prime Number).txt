@@ -1,0 +1,21 @@
+number = input("Please input a positive integer number: ")
+while number.isdigit() == False:
+    number = input("It is an invalid entry. Don't use non-numeric, float, or negative values! :  ")
+i = 1
+total = 0  
+while ((int(number)) / i) and (i<=int(number)):
+      i = (i + 1)
+      if ((int(number)) % i) == 0 :
+          total = total + i
+          
+if int(number) == 0:   
+    print(f"{number} is not a prime number") 
+elif total == int(number) :  
+    print(f"{number} is a prime number")
+else:
+    print(f"{number} is not a prime number")
+>>>>>>>>
+Please input a positive integer number: hg890
+It is an invalid entry. Don't use non-numeric, float, or negative values! :  -93
+It is an invalid entry. Don't use non-numeric, float, or negative values! :  7879
+7879 is a prime number

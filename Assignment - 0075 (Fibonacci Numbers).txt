@@ -1,0 +1,19 @@
+Assignment - 007/5 (Fibonacci Numbers)
+---------------------------------------
+num = input("Plase enter how many Fibonacci numbers you want to see: ")
+while num.isdigit() == False:
+    num = input("It is an invalid entry. Don't use non-numeric, float, or negative values! :  ")
+golden_list = [0, 1]
+b = 0 
+while b < int(num)-2:
+    golden_list.append(golden_list [b] + golden_list [b+1]) 
+    b = b+1
+print(f"fibonacci 1. → {num}. :", golden_list)
+
+
+Output >>>>>>>>
+
+Plase enter how many Fibonacci numbers you want to see: p15
+It is an invalid entry. Don't use non-numeric, float, or negative values! :  -17
+It is an invalid entry. Don't use non-numeric, float, or negative values! :  11
+fibonacci 1. → 11. : [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
