@@ -1,0 +1,20 @@
+Assignment - 007/6 (Prime Numbers)
+-----------------------------------
+
+input_num = input("Please enter an upper number to list Prime Numbers: ")  
+while input_num.isdigit() == False:
+    number = input("It is an invalid entry. Please input a positive integer number:  ")
+prime = [] 
+for num in range(1,int(input_num)+1):  
+   if num > 1:  
+       for i in range(2,num):  
+           if (num % i) == 0:  
+               break  
+       else:  
+           prime.append(num)
+print(f"Prime numbers from 1 to {input_num} = {prime}")
+
+>>>>>>OUTPUT>>>>>>>
+
+Please enter an upper number to list Prime Numbers: 100
+Prime numbers from 1 to 100 = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]

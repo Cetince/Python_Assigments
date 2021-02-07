@@ -1,0 +1,27 @@
+Task - 1 (Lambda Functions)
+---------------------------
+
+input_1 = [['C', 'L'], ['A', 'R', 'U'], ['S', 'W', 'A', 'Y']]
+input_2 = [[2, 3, 5, 1], [0, 2], [1]]
+
+len_syllable = lambda x: max(x, key=len)
+
+print(f"({len_syllable(input_1)})", ",", len(len_syllable(input_1)))
+print(f"({len_syllable(input_2)})", ",", len(len_syllable(input_2)))
+
+Task - 2 (Defining Functions)
+-----------------------------
+
+num_1 = input("Please input first number: ")
+while num_1.isdigit() == False:
+    num_1 = input("It is an invalid entry. Don't use non-numeric, float, or negative values! :  ")
+num_2 = input("Please input second number: ")
+while num_2.isdigit() == False:
+    num_2 = input("It is an invalid entry. Don't use non-numeric, float, or negative values! :  ")
+
+if int(num_2) == 0:
+    print("Error")
+elif int(num_1) % int(num_2) != 0:
+    print("not divisible")
+else :
+    print("divisible")
